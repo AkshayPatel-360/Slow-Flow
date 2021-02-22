@@ -5,11 +5,20 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public float slowDownFactor = 0.05f;
-    public bool isSlowDown = false;
-
-    void DoSlowMotion()
+    private void Update()
     {
-        Time.timeScale = slowDownFactor;
+        if (Input.GetMouseButton(0))
+        {
+            Debug.Log("on");
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            Debug.Log("Off");
+        }
+
+
+
+        
     }
+
 }
